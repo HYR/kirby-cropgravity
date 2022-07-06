@@ -1,6 +1,6 @@
-panel.plugin("medienbaecker/cropselect", {
+panel.plugin("hyr/cropgravity", {
     fields: {
-      cropselect: {
+      cropgravity: {
         props: {
           label: String,
           value: String,
@@ -13,7 +13,7 @@ panel.plugin("medienbaecker/cropselect", {
           }
         },
         template: `
-          <k-field v-bind="$props" class="kirby-cropselect-field">
+          <k-field v-bind="$props" class="kirby-cropgravity-field">
             <div class="image" v-if="image">
               <img :src="image"/>
               <div class="radios">
@@ -21,7 +21,7 @@ panel.plugin("medienbaecker/cropselect", {
                   v-for="option in options"
                   :class="option.replace(' ', '-')">
                   <input
-                    name="cropselect"
+                    name="cropgravity"
                     type="radio"
                     :value="option"
                     v-model="value"

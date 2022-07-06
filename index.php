@@ -1,23 +1,23 @@
 <?php
 
-Kirby::plugin('medienbaecker/cropselect', [
+Kirby::plugin('HYR/cropgravity', [
     'fields' => [
-        'cropselect' => [
+        'cropgravity' => [
             'props' => [
                 'value' => function ($value = "center") {
                     return $value;
                 },
                 'options' => function() {
                     return [
-                        "top left",
-                        "top",
-                        "top right",
-                        "left",
+                        "northwest",
+                        "north",
+                        "northeast",
+                        "west",
                         "center",
-                        "right",
-                        "bottom left",
-                        "bottom",
-                        "bottom right"
+                        "east",
+                        "southwest",
+                        "south",
+                        "southeast"
                     ];
                 }
             ],

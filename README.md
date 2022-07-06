@@ -1,18 +1,18 @@
-# Cropselect for Kirby 3
+# Cropgravity for Kirby 3
 
-This is a visual crop selector for Kirby 3. You can select from 9 different crop positions and use it like that:
+This is a visual crop selector for Kirby 3 specifcally You can select from 9 different crop positions and use it like that:
 
 ### Blueprint:
 ```yaml
 fields:
-    cropselect:
+    cropgravity:
         label:  Select crop position
-        type:   cropselect
+        type:   cropgravity
 ```
 
 ### Template:
 ```php
-$image->crop(100, 200, $image->cropselect());
+$image->crop(100, 200, $image->cropgravity());
 ```
 
 ### Preview:
@@ -21,4 +21,4 @@ $image->crop(100, 200, $image->cropselect());
 
 ## Installation
 
-Put the `kirby-cropselect` folder into your `site/plugins` folder.
+Put the `kirby-cropgravity` folder into your `site/plugins` folder.
