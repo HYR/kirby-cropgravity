@@ -9,15 +9,15 @@ Kirby::plugin('HYR/cropgravity', [
                 },
                 'options' => function() {
                     return [
-                        "northwest",
-                        "north",
-                        "northeast",
-                        "west",
+                        "top left",
+                        "top",
+                        "top right",
+                        "left",
                         "center",
-                        "east",
-                        "southwest",
-                        "south",
-                        "southeast"
+                        "right",
+                        "bottom left",
+                        "bottom",
+                        "bottom right"
                     ];
                 }
             ],
